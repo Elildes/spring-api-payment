@@ -1,0 +1,10 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: service-payment
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:http://localhost:8888
